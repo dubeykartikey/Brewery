@@ -9,7 +9,9 @@
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+  </head>
+
+
 <body>
   <div class="container">
     <input type="checkbox" id="flip">
@@ -44,16 +46,16 @@
                 <input type="password" placeholder="Enter your password" required>
               </div>
               <div class="text"><a href="#">Forgot password?</a></div>
-              <div class="button input-box">
-                <input type="submit" value="Sumbit">
-              </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+              
             </div>
-        </form> {% endcomment %}
-        <form method="post" action={% url 'login'%}>
-          {% csrf_token %}
-          {{ signin_form.as_p }}
-          <button type="submit">Sign up</button>
+          </form> {% endcomment %}
+          <form method="post" action={% url 'login' %}>
+            {% csrf_token %}
+            {{ signin_form.as_p }}
+            <div class="button input-box">
+                <input type="submit" value="Sumbit">
+            </div>
+            <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
         </form>
       </div>
         <div class="signup-form">
@@ -61,7 +63,10 @@
           <form method="post">
             {% csrf_token %}
             {{ signup_form.as_p }}
-            <button type="submit">Sign up</button>
+            <div class="button input-box">
+                <input type="submit" value="Sumbit">
+            </div>
+            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
           </form>
         {% comment %} <form action="#">
             <div class="input-boxes">
@@ -80,7 +85,7 @@
               <div class="button input-box">
                 <input type="submit" value="Sumbit">
               </div>
-              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+              
             </div>
       </form> {% endcomment %}
     </div>
