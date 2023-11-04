@@ -1,0 +1,45 @@
+.align-top-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.partition{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.right-partition{
+    flex: 0.99;
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+}
+
+.align-center{
+    display: flex;
+    justify-content: space-around;
+}
+
+.table-header{
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.show-modal{
+    display: block !important;
+    
+}
+
+.review-form{
+    width: 20rem;
+}
+
+/* .rating-com{
+    width: 5rem;
+    height: 1rem;
+} */
