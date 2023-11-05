@@ -39,6 +39,11 @@
     width: 20rem;
 }
 
+.review-card{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* .rating-com{
     width: 5rem;
     height: 1rem;

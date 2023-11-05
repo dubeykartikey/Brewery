@@ -24,7 +24,6 @@
             name="btnradio"
             id="btnradio{{ value }}"
             autocomplete="off"
-            checked=""
             value="{{value}}"
           />
           <label class="btn btn-outline-primary" for="btnradio{{ value }}"
@@ -46,7 +45,6 @@
         </div>
     </div>
     </form> 
-    {% comment %} <h1>{{ breweries}}</h1> {% endcomment %}
     <table class="table table-hover mt-5">
       <thead class="table-dark table-header">
         <tr>
@@ -72,7 +70,7 @@
                 <td>{{ brew.address_1 }}</td>
                 <td>{{ brew.phone }}</td>
                 <td>{{ brew.website_url }}</td>
-                <td>{{ brew.name }}</td>
+                <td>{{ brew.id|get_rating }}</td>
                 <td>{{ brew.state }}</td>
                 <td>{{ brew.city }}</td>
                 <td>
@@ -87,7 +85,7 @@
             {% endfor %}
         {% else %}
             <tr>
-                <th colspan="8">
+                <th colspan="9">
                   <div class="align-center">No Data</div>
                 </th>
             </tr>
