@@ -87,7 +87,7 @@ def signout(request):
 def filter(request):
     if request.method == "POST":
         values = request.POST
-        filter, search = values.get("filter"), values.get("search")
+        filter, search = values.get("btnradio"), values.get("search")
         url = f"https://api.openbrewerydb.org/v1/breweries?{filter}={search}"
 
         response = request_to_api("get", url)

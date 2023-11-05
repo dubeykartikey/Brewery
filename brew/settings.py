@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-3ja515)r=r3$3=*-&pcegti6gevx1()t8yc#iep$2u-c&g#y4+
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "brewery.onrender.com"
+    "brewery.onrender.com",
+    "127.0.0.1",
+    "localhost"
 ]
 
 
